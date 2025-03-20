@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;1,100;1,200&family=Expletus+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+html {
+    /* font-size: 62.5%; */
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #00ccff, white);
+    display: flex;
+    background-image: url('images/anhnen.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Bitter', serif;
+
+}
+
+/* ------header.php-------- */
+nav {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    height: 10vh;
+    /* box-shadow: 0px 0px 17px 2px white; */
+    border-radius: 10px;
+
+}
+
+nav li {
+
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+    left: 30vh;
+    font-weight: bold;
+
+}
+
+nav a {
+    padding-left: 65px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white
+}
+
+.page a:after {
+    content: "";
+    position: absolute;
+    background-color: #ff7200;
+    height: 3px;
+    width: 0;
+    left: 8vh;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.page a:hover::after {
+    width: 60%;
+}
+
+.header a {
+    font-size: 25px;
+    font-family: 'Expletus Sans', cursive;
+    background: linear-gradient(to right, #ff7200, white);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.page a:hover {
+    color: #ff7200;
+}
+
+/*----------index.php--------------- */
+.index-all {
+
+    text-align: center;
+    color: white;
+    padding-top: 10vh;
+    font-size: 20px;
+}
+
+.index h2 {
+    color: #ff7200;
+    font-size: 30px;
+}
+
+.index a {
+    text-decoration: none;
+    color: white
+}
+
+.warn {
+    color: rgb(240, 123, 123);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.link_file a {
+    text-decoration: none;
+    color: #ffbf00;
+    font-weight: bold;
+    display: inline-block;
+    padding-left: 30px;
+
+}
+
+/*----------login.php--------------- */
+
+
+.login-form-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.2);
+    max-width: 400px;
+    margin: 5% auto;
+    color: white;
+}
+
+.login-form h2 {
+    text-align: center;
+    color: orange;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.login-icon {
+    display: block;
+    margin: 0 auto 20px;
+    width: 80px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #272530;
+    color: white;
+    font-size: 16px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    width: 48%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f69f42;
+    color: white;
+    box-shadow: 0px 0px 5px 2px rgba(246, 159, 66, 0.8);
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff7200;
+}
+
+.login-form a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #ff7200;
+    text-decoration: none;
+}
+
+.login-form a:hover {
+    text-decoration: underline;
+}
+
+
+/*----------signup.php--------------- */
+.signup-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Form style */
+.signup-form {
+    background-color: #333;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    color: #fff;
+}
+
+.signup-form h2 {
+    text-align: center;
+    color: #ff7200;
+    margin-bottom: 20px;
+}
+
+/* Input fields styling */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ff7200;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #444;
+    color: #fff;
+}
+
+/* Buttons styling */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    width: 48%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ff7200;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e66f00;
+}
+
+/* Link styling */
+.signup-form a {
+    color: #ff7200;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.signup-form a:hover {
+    text-decoration: underline;
+}
+
+.friend-sys {
+    text-align: center;
+    color: white;
+
+}
+
+.table table {
+    margin-left: 35%;
+    color: white;
+}
+
+.btn-list a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-list {
+    text-align: center;
+
+}
+
+.friend-sys h3 {
+    font-size: 30px;
+    color: rgb(238, 114, 5);
+}
+
+.friend-sys p {
+    font-size: 20px;
+}
+
+.content-button {
+    height: 35px;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 10px;
+    background: #f69f42;
+
+
+}
+
+.btn-list a {
+    padding-left: 20px;
+    color: rgb(238, 114, 5);
+    font-weight: bold;
+}
+
+table tr {
+    color: #ffd310;
+    font-weight: bold;
+}
+
+.alerts {
+    background-color: rgba(239, 63, 63, 0.526);
+    padding-left: 10px;
+    color: rgb(246, 7, 7);
+    font-weight: bold;
+}
+
+/* --------------about.php--------------- */
+
+.about h2 {
+    color: orange;
+}
+
+.about {
+    margin-left: 15px;
+    color: white;
+}
+
+.about a {
+    color: rgb(238, 114, 5);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.about a:hover {
+    text-decoration: underline;
+}
+
+/*---------------pagination---------------*/
+.pagination a {
+    color: #ffff99;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 25vh;
+    padding-right: 25vh;
+
+}
+
+.pagination {
+    text-align: center;
+}
+
+.pagination:hover {
+    text-decoration: underline;
+}
